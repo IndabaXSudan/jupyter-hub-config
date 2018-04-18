@@ -20,16 +20,16 @@
 #------------------------------------------------------------------------------
 # This is an application.
 c.JupyterHub.authenticator_class = 'oauthenticator.GitHubOAuthenticator'
-c.GitHubOAuthenticator.oauth_callback_url = 'http://192.168.43.154:8000/hub/oauth_callback'
-c.GitHubOAuthenticator.client_id = 'b441776cd3336313f730'
-c.GitHubOAuthenticator.client_secret = 'aa1f801507e118b0de217b851d40ec46044f9c69'
+c.GitHubOAuthenticator.oauth_callback_url = 'http://192.168.43.204:8000/hub/oauth_callback'
+c.GitHubOAuthenticator.client_id = '934824f31bbddbd92997'
+c.GitHubOAuthenticator.client_secret = 'f15372181b5771e87eb716540a1c6adce8269e4c'
 # This is an application.
 # create system users that don't exist yet
 c.LocalAuthenticator.create_system_users = True
 #c.Authenticator.whitelist = {'IndabaXSudan'}
-c.Spawner.notebook_dir = '/Users/Abubakr/notebooks'
-c.JupyterHub.cookie_secret_file = '~/.jupyterhub/jupyterhub_cookie_secret'
-c.Authenticator.admin_users = {'IndabaXSudan'}
+c.Spawner.notebook_dir = '/home/indabaxsudan/notebooks'
+c.JupyterHub.cookie_secret_file = '~/installation_files/jupyterhub_cookie_secret'
+c.Authenticator.admin_users = {'indabaxsudan'}
 c.JupyterHub.proxy_cmd = ['/usr/local/bin/configurable-http-proxy']
 
 # Let the Systemctl aware of all the environment path
